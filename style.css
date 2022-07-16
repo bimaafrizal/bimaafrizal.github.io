@@ -7,7 +7,20 @@ header{
     right: 0px;
     left: 0px;
 }
-
+body {
+    animation: fadeInAnimation ease 3s;
+    padding-top: 40px;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 nav ul a:active {
     background-color: #fff;
     border-radius: 3px;
@@ -71,11 +84,30 @@ hr {
 .content{
     margin-top: 5px;
 }
+.skills{
+    background-color: #f3f3f3;
+}
 
 #foto {
     width: 100%;
     height: 30vw;
     object-fit: cover;
+}
+
+
+.animation-skills{
+    transition: 1s;
+}
+.animation-skills:hover{
+    background-color: #f3f3f3;
+    padding-top: 20px;
+    transition: 1s;
+}
+
+.porto:hover {
+    border: #7c45d4 solid 5px;
+  bottom: 20px;
+  transition: 1s;
 }
 
 @media (max-width: 700px) {
@@ -99,6 +131,24 @@ hr {
     #foto {
         height: 60vw;
     object-fit: cover;
+    }
+}
+@media (max-width: 900px) {
+    #foto {
+        height: 60vw;
+    object-fit: cover;
+    }
+    .banner {
+        width: 100%;
+        background-image: url(./asset/banner.jpg);
+          padding: 180px 0 110px 0;
+          height: 950px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        color: #fff;
+        text-align: center;
     }
 }
 
