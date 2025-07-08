@@ -70,7 +70,19 @@
 /* Fix untuk mobile menu */
 #mobile-menu {
     display: none;
-    z-index: -100;
+    position: absolute; /* atau 'fixed' jika ingin tetap saat di-scroll */
+    top: 100%; /* posisikan tepat di bawah navbar */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* pastikan lebih tinggi dari konten lain */
     transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#mobile-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 

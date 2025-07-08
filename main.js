@@ -56,20 +56,30 @@ window.addEventListener("DOMContentLoaded", () => {
   if (typingElementMobile) type(typingElementMobile);
 });
 
-window.addEventListener("DOMContentLoaded", type);
-window.addEventListener("DOMContentLoaded", typeMobile);
-
 const hamburger = document.querySelector('#hamburger-icon');
 const mobileMenu = document.querySelector('#mobile-menu');
 
 hamburger.addEventListener('click', () => {
-    let src = (hamburger.getAttribute('src') === 'asset/icon-hamburger.svg') ? 'asset/icon-close.svg' : 'asset/icon-hamburger.svg';
-    hamburger.setAttribute('src', src);
-
-    // Toggle the visibility of the mobile menu
-    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
-        mobileMenu.style.display = 'block';
-    } else {
-        mobileMenu.style.display = 'none';
-    }
+  const isOpen = mobileMenu.classList.contains('hidden');
+  
+  // Toggle icon
+  hamburger.src = isOpen ? 'asset/icon-close.svg' : 'asset/icon-hamburger.svg';
+  
+  // Toggle menu
+  mobileMenu.classList.toggle('hidden');
+  
+  // Tambahkan animasi
+  if (isOpen) {
+    mobileMenu.style.display = 'block';
+    setTimeout(() => {
+      mobileMenu.style.opacity = '1';
+      mobileMenu.style.transform = 'translateY(0)';
+    }, 10);
+  } else {
+    mobileMenu.style.opacity = '0';
+    mobileMenu.style.transform = 'translateY(-10px)';
+    setTimeout(() => {
+      mobileMenu.style.display = 'none';
+    }, 300);
+  }
 });
