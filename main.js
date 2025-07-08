@@ -32,14 +32,44 @@ faders.forEach((fader) => {
 
 const text = `"Jika ingin berkembang, tantang dirimu sendiri!"`;
 const typingElement = document.getElementById("typing-text");
+const typingElementMobile = document.getElementById("typing-text-mobile");
 let index = 0;
 
-function type() {
-  if (index < text.length) {
-    typingElement.textContent += text.charAt(index);
-    index++;
-    setTimeout(type, 50); // kecepatan ketik (ms)
+function type(element) {
+  let index = 0;
+  element.textContent = ""; // Clear text sebelum memulai
+  function typeCharacter() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeCharacter, 50);
+    }
   }
+  typeCharacter();
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+  const typingElement = document.getElementById("typing-text");
+  const typingElementMobile = document.getElementById("typing-text-mobile");
+  
+  if (typingElement) type(typingElement);
+  if (typingElementMobile) type(typingElementMobile);
+});
+
 window.addEventListener("DOMContentLoaded", type);
+window.addEventListener("DOMContentLoaded", typeMobile);
+
+const hamburger = document.querySelector('#hamburger-icon');
+const mobileMenu = document.querySelector('#mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    let src = (hamburger.getAttribute('src') === 'asset/icon-hamburger.svg') ? 'asset/icon-close.svg' : 'asset/icon-hamburger.svg';
+    hamburger.setAttribute('src', src);
+
+    // Toggle the visibility of the mobile menu
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+        mobileMenu.style.display = 'block';
+    } else {
+        mobileMenu.style.display = 'none';
+    }
+});

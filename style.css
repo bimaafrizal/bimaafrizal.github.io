@@ -64,4 +64,13 @@
 
 .animate-cursor {
   animation: blink 1s step-end infinite;
+  transition: all 0.3s ease-in-out
 }
+
+/* Fix untuk mobile menu */
+#mobile-menu {
+    display: none;
+    z-index: -100;
+    transition: all 0.3s ease-in-out;
+}
+
