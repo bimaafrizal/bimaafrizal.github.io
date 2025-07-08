@@ -1,239 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Portofolio Bima</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <style>
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!!!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<!-- /// -->
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: #070478;">
-      <div class="container">
-        <p class="navbar-brand text-white p-name md-name">Bima</p>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="true" href="#">
-                <p class="p-text">
-                  Home
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="true" href="#tentang-saya">
-                <p class="p-text">
-                  Tentang saya
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="true" href="#portofolio">
-                <p class="p-text">
-                  Portofolio
-                </p>
-              </a>
-            </li>
-          </ul>
-          
+<body class="bg-gray-900">
+    <!-- navbar -->
+    <nav class="bg-gray-950">
+        <div class="container-wrapper">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <h1 class="text-white text-2xl font-bold">PORTO</h1>
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">SKILL</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">ORGANIZATION</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">PROJECT</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white hover:text-purple-800 text-sm">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  
-  </header>
-  <div class="banner">
-    <h1 class="title">Welcome to My Portofolio</h1>
-  </div>
-  <div class="about-me pt-5">
-    <h1 class="text-center" style="font-family: Gugi;" id="tentang-saya">Tentang Saya</h1>
-    <div class="d-flex justify-content-center">
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img id="foto" class="img img-fluid mt-3" src="./asset/bima23.jpeg" alt="foto profile">
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <h3 style="font-family: Montserrat;" class="mt-3">Hallo perkenalkan, saya Bima Afrizal</h3>
-          <p class="summary">Saya merupakan seorang junior programmer. Saya merupakan lulusan D3 Teknik Informatika Universitas Sebelas Maret dan sedang melanjutkan pendidikan di Universitas Bina Nusantara. Saya tertarik pada pengembangan aplikasi berbasis web dan mobile. Saya merupakan seorang yang senang belajar dan menyukai tantangan</p>
-          <h3 style="font-family: Montserrat;">Hubungi saya melalui:</h3>
-          <a href="https://www.linkedin.com/in/bima-afrizal-malna-12033b145/" target="_blank" class="btn btn-outline-primary con"><i class="fab fa-linkedin"></i> Bima Afrizal</a>
-          <a href="https://github.com/bimaafrizal" target="_blank" class="btn btn-outline-dark con"><i class="fab fa-github"></i> bimaafrizal</a>
-          <a href="https://instagram.com/bimaafrizal_" target="_blank" class="btn btn-outline-danger con"> <i class="fab fa-instagram"></i> bimaafrizal_</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="skills">
-    <div class="container">
-      <div class="row">
-        <h1 class="text-center mt-5" style="font-family: Gugi;">Skills</h1>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #e65027;" class="fab fa-html5"></i></h1>
-          <h3>HTML</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #1572b6;" class="fab fa-css3-alt fa-2x"></i></h1>
-          <h3>CSS</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #7633F9;" class="fab fa-bootstrap fa-2x"></i></h1>
-          <h3>Bootstrap</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #e1eb34;" class="fab fa-js"></i></h1>
-          <h3>Javascript</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #6EA45F;" class="fab fa-node"></i></h1>
-          <h3>Node</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #777bb3;" class="fab fa-php fa-2x"></i></h1>
-          <h3>PHP</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#e74122" d="M11.466 0c.88 1.423-.28 3.306-1.207 4.358c-.899 1.02-1.992 1.873-2.985 2.8c-1.066.996-2.091 2.044-2.967 3.213c-1.753 2.339-2.827 5.28-2.038 8.199c.788 2.916 3.314 4.772 6.167 5.429c-1.44-.622-2.786-2.203-2.79-3.82c-.003-1.765 1.115-3.262 2.505-4.246c-.167.632-.258 1.21.155 1.774a1.68 1.68 0 0 0 1.696.642c1.487-.326 1.556-1.96.674-2.914c-.872-.943-1.715-2.009-1.384-3.377c.167-.685.588-1.328 1.121-1.787c-.41 1.078.755 2.14 1.523 2.67c1.332.918 2.793 1.612 4.017 2.688c1.288 1.132 2.24 2.661 2.047 4.435c-.208 1.923-1.736 3.26-3.45 3.936c3.622-.8 7.365-3.61 7.44-7.627c.093-3.032-1.903-5.717-5.158-7.384c.19.48.074.697-.058.924c-.55.944-2.082 1.152-2.835.184c-1.205-1.548.025-3.216.197-4.855c.215-2.055-1.073-4.049-2.67-5.242z"/></svg>
-          </svg>
-          </h1>
-          <h3>Codeigniter</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #F72C1F;" class="fab fa-laravel fa-2x"></i></h1>
-          <h3>Laravel</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #f36944;" class="fab fa-laravel fa-2x"></i></h1>
-          <h3>Lumen</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #e65027;" class="fab fa-java"></i></h1>
-          <h3>Java</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #00a7d1;" class="fab fa-golang"></i></h1>
-          <h3>Golang</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #336e7b;" class="fas fa-database fa-2x"></i></h1>
-          <h3>Mysql</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #6EA45F;" class="fas fa-database fa-2x"></i></h1>
-          <h3>MongoDB</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: black;" class="fab fa-github"></i></h1>
-          <h3>Git</h3>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mt-3 text-center animation-skills">
-          <h1><i style="color: #f76301;" class="fa-regular fa-message"></i></h1>
-          <h3>Rabbitmq</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portofolio mt-5 p-3" id="portofolio">
-    <div class="container">
-      <div class="row">
-        <h1 class="text-center" style="font-family: Gugi;" font-weight: bold;>Portofolio</h1>
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-2 mr-2">
-          <div class="card porto" style="width: 19rem;">
-            <img src="./asset/gestio.png" class="card-img-top img img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Gestio</h5>
-              <p class="card-text text-center">Sebuah mobile apps untuk presensi dan management pegawai</p>
-              <div class="d-flex justify-content-center">
-                <div class="d-inline">
-                  <a href="https://gestio.gnetwork.id/2" target="_blank" class="btn btn-outline-primary">Link Website</a>
-                  <a href="" target="_blank" class="btn btn-outline-danger">Repository</a>
+
+    <!-- section home -->
+    <section class="py-16">
+        <div class="container-wrapper">
+            <div class="container flex justify-between items-center mx-auto px-4">
+                <!-- introduction -->
+                <div class="w-3/4 space-y-4 fade-in delay-1">
+                    <div class="bg-gray-800 text-white rounded-lg shadow-lg p-3 max-w-md">
+                        <div class="flex items-center space-x-3">
+                            <!-- Avatar -->
+                            <div
+                                class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                </svg>
+                            </div>
+                            <!-- Text -->
+                            <p id="typing-text"
+                                class="font-medium text-sm text-white whitespace-nowrap overflow-hidden border-r-2 border-white animate-cursor italic">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <h3 class="font-bold text-5xl mt-5 text-white">
+                            Hi, Saya Bima Afrizal
+                        </h3>
+                        <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" />
+                    </div>
+                    <div class="max-w-2xl">
+                        <h4 class="text-gray-500 font-semibold mt-5 text-justify">
+                            Saya mempunyai ketertarikan dalam bidang teknologi informasi,
+                            terutama dalam pengembangan web dan aplikasi. Saya selalu
+                            berusaha untuk belajar dan mengembangkan diri dalam bidang ini.
+                            Saya percaya bahwa dengan terus belajar dan berlatih, saya dapat
+                            menjadi seorang profesional yang handal di bidang teknologi
+                            informasi.
+                        </h4>
+                        <div class="mt-10">
+                            <a href="#"
+                                class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300">Lihat
+                                Portofolio</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>      
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-2 mr-2">
-          <div class="card porto" style="width: 19rem;">
-            <img src="./asset/awasbencana.png" class="card-img-top img img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Awas Bencana</h5>
-              <p class="card-text text-center">Sebuah sistem informasi yang dapat mengirimkan notifikasi ketika bencana terjadi</p>
-              <div class="d-flex justify-content-center">
-                <div class="d-inline">
-                  <a href="https://awasbencana.website/" target="_blank" class="btn btn-outline-primary">Link Website</a>
-                  <a href="https://github.com/bimaafrizal/tugas-akhir" target="_blank" class="btn btn-outline-danger">Repository</a>
+                <!-- image -->
+                <div class="fade-in delay-2">
+                    <img src="./asset/bima.png" alt="Porto Image"
+                        class="rounded-lg shadow-lg h-auto object-cover mx-auto" />
                 </div>
-              </div>
             </div>
-          </div>
-        </div>      
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-2 mr-2">
-          <div class="card porto" style="width: 19rem;">
-            <img src="./asset/go-wisata.png" class="card-img-top img img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Go-Wisata Module Budgeting</h5>
-              <p class="card-text text-center">Sebuah sistem yang dapat merekomendasikan paket wisata sesuai budget dan kebutuhan</p>
-              <div class="d-flex justify-content-center">
-                <div class="d-inline">
-                  <a href="https://go-wisata.id/" target="_blank" class="btn btn-outline-primary">Link Website</a>
-                  <a href="#" target="_blank" class="btn btn-outline-danger">Repository</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>      
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
-          <div class="card porto" style="width: 19rem;">
-            <img src="./asset/lawyer.png" class="card-img-top img img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Sistem Informasi E-Lawyer</h5>
-              <p class="card-text text-center">Ini merupakan sistem informasi Lawyer dalam project PBL(Project Base Learning) dengan mitra Cipta Mandiri Solusindo yang dibangun menggunakan Laravel</p>
-              <div class="d-flex justify-content-center">
-                <div class="d-inline">
-                  <a href="http://mylawyer.my.id/" target="_blank" class="btn btn-outline-primary">Link Website</a>
-                  <a href="https://gitd3ti.vokasi.uns.ac.id/denyfebriawan/project-backup-ascend" target="_blank" class="btn btn-outline-danger">Repository</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-2 mr-2">
-          <div class="card porto" style="width: 19rem;">
-            <img src="./asset/smp2.png" class="card-img-top img img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Sistem Informasi Sekolah SMP N 2 Wadaslintang</h5>
-              <p class="card-text text-center">Ini merupakan website SMP N 2 Wadaslintang yang dibangun menggunakan Codeigniter 3</p>
-              <div class="d-flex justify-content-center">
-                <div class="d-inline">
-                  <a href="https://spendawali.sch.id/" target="_blank" class="btn btn-outline-primary">Link Website</a>
-                  <a href="https://github.com/bimaafrizal/web-smp2wdslt" target="_blank" class="btn btn-outline-danger">Repository</a>
+    </section>
+
+    <!-- section about -->
+    <section class="fade-in">
+        <div class="container-wrapper py-16">
+            <div class="container mx-auto flex justify-center items-center flex-col space-y-8">
+                <div class="px-4 py-8 border rounded-lg border-gray-700 w-3/4">
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center">
+                        ABOUT ME
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed text-justify">
+                        Saya merupakan seorang junior programmer. Saya merupakan lulusan D3 Teknik Informatika Universitas Sebelas Maret dan sedang melanjutkan pendidikan di Universitas Bina Nusantara. Saya tertarik pada pengembangan aplikasi berbasis web dan mobile. Saya merupakan seorang yang senang belajar dan menyukai tantangan. Saya memiliki pengalaman dalam pengembangan aplikasi berbasis web dan mobile menggunakan berbagai bahasa pemrograman dan framework. Saya juga memiliki kemampuan dalam bekerja sama dalam tim dan berkomunikasi dengan baik. Saya selalu berusaha untuk meningkatkan kemampuan saya dalam bidang teknologi informasi.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    </section>
+
+    <!-- skill -->
+    <section id="skill">
+        <div class="container-wrapper py-16">
+            <div class="container mx-auto flex justify-center items-center flex-col space-y-8 px-4">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center fade-in">
+                    SKILL
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/html.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">HTML</h3>
+                            <p class="text-gray-400 font-semibold text-sm">-</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/css.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">CSS</h3>
+                            <p class="text-gray-400 font-semibold text-sm">-</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/bootstrap1.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Bootstrap</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/tailwind.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Tailwind</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/js.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Javascript</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Programming Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/nodejs.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Node JS</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Library</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/php.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">PHP</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Programming Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/ci.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">
+                                Codeigniter
+                            </h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/laravel.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Laravel</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/lumen.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Lumen</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/java.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Java</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Programming Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/go.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Go</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Programming Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/go.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Echo</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/Dart.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Dart</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Programming Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/Flutter.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Flutter</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/mysql.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">MySQL</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Database</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/mongodb.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">MongoDB</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Database</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/rabbitmq.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">RabbitMQ</h3>
+                            <p class="text-gray-400 font-semibold text-sm">
+                                Message Broker
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/git.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">GIT</h3>
+                            <p class="text-gray-400 font-semibold text-sm">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex justify-center items-center flex-col space-y-8 px-4 mt-4">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center fade-in">
+                    SEDANG BELAJAR:
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-xl items-center justify-center">
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/docker.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Docker</h3>
+                            <p class="text-gray-400 font-semibold text-sm">-</p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-4 rounded-lg shadow-lg flex items-center space-x-3 fade-in">
+                        <!-- icon -->
+                        <img src="./asset/next-js.png" alt="" class="w-10 h-10 flex-shrink-0 object-contain" />
+                        <!-- text -->
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-700 mb-1">Next JS</h3>
+                            <p class="text-gray-400 font-semibold text-sm">Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section about -->
+    <section class="fade-in">
+        <div class="container-wrapper py-16">
+            <div class="container mx-auto flex justify-center items-center flex-col space-y-8">
+                <div class="px-4 py-8 border rounded-lg border-gray-700 w-3/4">
+                    
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center">
+                        Note: Website sedang dalam pengembangan
+                    </h2>
+                    <!-- <p class="text-gray-400 text-lg leading-relaxed text-justify">
+                        Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di
+                        bidang teknologi informasi. Saya memiliki ketertarikan dalam
+                        pengembangan web dan aplikasi, serta selalu berusaha untuk belajar
+                        dan mengembangkan diri dalam bidang ini. Saya percaya bahwa dengan
+                        terus belajar dan berlatih, saya dapat menjadi seorang profesional
+                        yang handal di bidang teknologi informasi.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
 </body>
 
 </html>
