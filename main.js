@@ -62,6 +62,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
   
 });
+function closeMobileMenu() {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  
+  mobileMenu.classList.add('hidden');
+  mobileMenu.style.opacity = '0';
+  mobileMenu.style.transform = 'translateY(-10px)';
+  hamburgerIcon.src = 'asset/icon-hamburger.svg'; // Kembalikan ikon ke hamburger
+}
+
+// Pantau perubahan ukuran layar
+window.addEventListener('resize', function() {
+  const screenWidth = window.innerWidth;
+  
+  // Jika lebar layar >= 768px (md), tutup menu mobile
+  if (screenWidth >= 768) {
+    closeMobileMenu();
+  }
+});
 
 const hamburger = document.querySelector('#hamburger-icon');
 const mobileMenu = document.querySelector('#mobile-menu');
