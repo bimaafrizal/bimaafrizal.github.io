@@ -16,28 +16,25 @@
       <h1 class="text-white text-2xl font-bold">PORTO</h1>
       <ul class="hidden md:flex space-x-4">
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">HOME</a>
+          <a href="#home" class="text-white hover:text-purple-800 text-sm">HOME</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">ABOUT</a>
+          <a href="#about" class="text-white hover:text-purple-800 text-sm">ABOUT</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">SKILL</a>
+          <a href="#education" class="text-white hover:text-purple-800 text-sm">EDUCATION</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">EXPERIENCE</a>
+          <a href="#skill" class="text-white hover:text-purple-800 text-sm">SKILL</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">EDUCATION</a>
+          <a href="#experience" class="text-white hover:text-purple-800 text-sm">EXPERIENCE</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">ORGANIZATION</a>
+          <a href="#project" class="text-white hover:text-purple-800 text-sm">PROJECT</a>
         </li>
         <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">PROJECT</a>
-        </li>
-        <li>
-          <a href="#" class="text-white hover:text-purple-800 text-sm">CONTACT</a>
+          <a href="#contact" class="text-white hover:text-purple-800 text-sm">CONTACT</a>
         </li>
       </ul>
       <img src="asset/icon-hamburger.svg" alt="" class="md:hidden w-8 h-8 cursor-pointer" id="hamburger-icon">
@@ -46,19 +43,18 @@
     <!-- Mobile Menu -->
     <div class="hidden w-full bg-white shadow-md" id="mobile-menu">
       <div class="container mx-auto flex flex-col px-4 py-3 space-y-3">
-        <a href="#" class="text-black hover:text-purple-800 text-sm">HOME</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">ABOUT</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">EXPERIENCE</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">EDUCATION</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">ORGANIZATION</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">PROJECT</a>
-        <a href="#" class="text-black hover:text-purple-800 text-sm">CONTACT</a>
+        <a href="#home" class="text-black hover:text-purple-800 text-sm">HOME</a>
+        <a href="#about" class="text-black hover:text-purple-800 text-sm">ABOUT</a>
+        <a href="#education" class="text-black hover:text-purple-800 text-sm">EDUCATION</a>
+        <a href="#experience" class="text-black hover:text-purple-800 text-sm">EXPERIENCE</a>
+        <a href="#project" class="text-black hover:text-purple-800 text-sm">PROJECT</a>
+        <a href="#contact" class="text-black hover:text-purple-800 text-sm">CONTACT</a>
       </div>
     </div>
   </nav>
 
   <!-- section home -->
-  <section class="py-16 sm:py-24">
+  <section class="py-16 sm:py-24" id="home">
     <div class="container-wrapper">
       <div class="container md:flex md:justify-between items-center mx-auto px-4">
         <!-- introduction -->
@@ -81,9 +77,10 @@
           </div>
           <div class="flex text-center md:justify-start justify-center items-center">
             <h3 class="font-bold text-5xl mt-5 text-white">
-              Hi, Saya Bima Afrizal
+              Hi, Saya <span class="text-purple-800">Bima Afrizal</span>
             </h3>
             <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" />
+
           </div>
           <div class="flex justify-center items-center md:hidden">
             <div class="bg-gray-800 text-white rounded-lg shadow-lg p-3 max-w-md">
@@ -103,18 +100,16 @@
             </div>
           </div>
           <div class="max-w-2xl">
-            <h4 class="text-gray-500 font-semibold mt-5 text-center md:text-justify">
-              Saya mempunyai ketertarikan dalam bidang teknologi informasi,
-              terutama dalam pengembangan web dan aplikasi. Saya selalu
-              berusaha untuk belajar dan mengembangkan diri dalam bidang ini.
-              Saya percaya bahwa dengan terus belajar dan berlatih, saya dapat
-              menjadi seorang profesional yang handal di bidang teknologi
-              informasi.
+            <h4 class="text-white font-bold mt-5 text-center text-3xl md:text-justify">
+              Saya seorang Junior <span class="text-[#16f2b3]">Software Developer</span>
             </h4>
             <div class="mt-10 flex md:justify-start justify-center">
-              <a href="#"
-                class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300">Lihat
+              <a href="#project"
+                class="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 transition duration-300 me-4">Lihat
                 Portofolio</a>
+              <a href="#contact"
+                class="bg-[#2cc197] text-white px-4 py-2 rounded-lg hover:bg-[#2dab87] transition duration-300">
+                Contact ME</a>
             </div>
           </div>
         </div>
@@ -128,7 +123,7 @@
   </section>
 
   <!-- section about -->
-  <section class="fade-in">
+  <section class="fade-in" id="about">
     <div class="container-wrapper py-16">
       <div class="container mx-auto flex justify-center items-center flex-col space-y-8">
         <div class="px-4 py-8 border rounded-lg border-gray-700 md:w-3/4">
@@ -143,6 +138,51 @@
             pemrograman dan framework. Saya juga memiliki kemampuan dalam bekerja sama dalam tim dan berkomunikasi
             dengan baik. Saya selalu berusaha untuk meningkatkan kemampuan saya dalam bidang teknologi informasi.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+    <section id="education" class="timeline-section">
+    <div class="container-wrapper py-16">
+      <div class="container mx-auto flex justify-center items-center flex-col space-y-8 px-4">
+        <h2 class="text-3xl font-bold text-white mb-8 text-center fade-in">EDUCATION</h2>
+
+        <div class="timeline-container">
+          <ol class="relative border-s border-gray-200 dark:border-gray-700">
+            <!-- Item 1 -->
+            <li class="mb-10 ms-4 timeline-item slide-in-right">
+              <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <div class="timeline-content bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Universitas Bina Nusantara</h3>
+                <h4 class="text-base font-semibold text-gray-900 dark:text-white">S1 Teknik Informatika</h4>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Mei 2024 - Sekarang</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">IPK: 3.86</p>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li class="mb-10 ms-4 timeline-item slide-in-right">
+              <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <div class="timeline-content bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Universitas Negeri Sebelas Maret</h3>
+                <h4 class="text-base font-semibold text-gray-900 dark:text-white">D3 Teknik Informatika</h4>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Juli 2020 - Juli 2023</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">IPK: 3.9</p>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li class="mb-10 ms-4 timeline-item slide-in-right">
+              <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <div class="timeline-content bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SMA N 1 Purworejo</h3>
+                <h4 class="text-base font-semibold text-gray-900 dark:text-white">MIPA</h4>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Juli 2017 - Mei 2020</time>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
@@ -393,7 +433,7 @@
   </section>
 
   <!-- experience -->
-  <section>
+  <section id="experience">
     <div class="container-wrapper py-16">
       <div class="container mx-auto flex justify-center items-center flex-col space-y-8 px-4">
         <h2 class="text-3xl font-bold text-white mb-8 text-center fade-in">
@@ -407,8 +447,10 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Kementerian Perindustrian</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">IT Officer - Fulltime</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Juni 2025 - Sekarang </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Pengembangan sistem dan mengevaluasi sistem yang sudah berjalan.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Juni 2025 - Sekarang
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Pengembangan sistem dan mengevaluasi
+              sistem yang sudah berjalan.</p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -417,8 +459,11 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PT Solusi Pembayaran elektronik</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Software Engineer - Contract</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oktober 2023 - Mei 2025 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Mengembangkan serta mengimplementasikan sistem yang sudah dirancang dan memperbaiki bug sistem informasi internal perusahan.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oktober 2023 - Mei 2025
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Mengembangkan serta
+              mengimplementasikan sistem yang sudah dirancang dan memperbaiki bug sistem informasi internal perusahan.
+            </p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -427,8 +472,10 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PT Infinity Blessing Indonesia</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Mobile Developer - Freelance</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Januari 2024 - Mei 2024 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Mengimplementasi desain UIUX, perancangan sistem, dan integrasi sistem melalui API.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Januari 2024 - Mei 2024
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Mengimplementasi desain UIUX,
+              perancangan sistem, dan integrasi sistem melalui API.</p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -437,8 +484,10 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">LOKPRO</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Laravel Developer - Internship</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">November 2022 - Febuari 2023 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu pembuatan dan pengembangan sistem informasi berbasis web.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">November 2022 - Febuari
+              2023 </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu pembuatan dan pengembangan
+              sistem informasi berbasis web.</p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -447,18 +496,23 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Universitas Negeri Sebelas Maret</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Asisten Dosen Backend - Contract</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Agustus 2022 - Januari 2023 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu mengajarkan materi dan membantu pembuatan module materi.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Agustus 2022 - Januari
+              2023 </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu mengajarkan materi dan
+              membantu pembuatan module materi.</p>
           </li>
-          
+
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
             <div
               class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
             </div>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Dinas Pariwisata Pemuda dan Olahraga Kabupaten Madiun</h3>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Dinas Pariwisata Pemuda dan Olahraga
+              Kabupaten Madiun</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Web Developer - Internship</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Agustus 2022 - Januari 2023 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Melakukan integrasi, memperbaiki bug, dan pengembangan web go-wisata.id.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Agustus 2022 - Januari
+              2023 </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Melakukan integrasi, memperbaiki bug,
+              dan pengembangan web go-wisata.id.</p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -466,9 +520,12 @@
               class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Universitas Negeri Sebelas Maret</h3>
-            <h4 class="text-base font-semibold text-gray-900 dark:text-white">Asisten Dosen Pemrograman Berbasis Object - Contract</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Maret 2022 - Juli 2022 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu mengajarkan materi konsep dasar OOP dan membantu penialaian tugas, UTS, UAS , dan projek.</p>
+            <h4 class="text-base font-semibold text-gray-900 dark:text-white">Asisten Dosen Pemrograman Berbasis Object
+              - Contract</h4>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Maret 2022 - Juli 2022
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu mengajarkan materi konsep
+              dasar OOP dan membantu penialaian tugas, UTS, UAS , dan projek.</p>
           </li>
 
           <li class="mb-10 ms-4 bg-white p-3 rounded-lg shadow-md dark:bg-gray-800 slide-in-right">
@@ -477,8 +534,10 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">CV. Pratama Cipta Solusino</h3>
             <h4 class="text-base font-semibold text-gray-900 dark:text-white">Web Developer - Internship</h4>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Maret 2022 - Juli 2022 </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu membuat sistem informasi untuk membuat perjanjian konsultasi langsung dan monitoring agenda kasus.</p>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Maret 2022 - Juli 2022
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Membantu membuat sistem informasi
+              untuk membuat perjanjian konsultasi langsung dan monitoring agenda kasus.</p>
           </li>
 
         </ol>
@@ -486,7 +545,10 @@
     </div>
   </section>
 
-  <!-- section about -->
+  <!-- section project -->
+   <!-- section contact -->
+
+  <!-- section dalam pengembangan -->
   <section class="fade-in">
     <div class="container-wrapper py-16">
       <div class="container mx-auto flex justify-center items-center flex-col space-y-8">
@@ -499,6 +561,7 @@
       </div>
     </div>
   </section>
+
   <script src="./main.js"></script>
 </body>
 

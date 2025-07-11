@@ -122,3 +122,24 @@
 .slide-in-right.delay-3 {
   animation-delay: 0.6s;
 }
+
+
+.timeline-section {
+      min-height: 600px; /* Minimal tinggi yang sama */
+    }
+    
+    .timeline-container {
+      max-width: 800px; /* Lebar maksimal yang sama */
+      width: 100%;
+    }
+    
+    .timeline-item {
+      min-height: 120px; /* Minimal tinggi untuk setiap item */
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .timeline-content {
+      flex: 1;
+      padding: 1rem;
+    }
