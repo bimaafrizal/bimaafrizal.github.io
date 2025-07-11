@@ -86,3 +86,39 @@
     transform: translateY(0);
 }
 
+
+/* Animasi untuk fade-in dari samping kanan */
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Elemen di luar layar */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Elemen kembali ke posisi normal */
+  }
+}
+
+.slide-in-right {
+  opacity: 0; /* Mulai dengan elemen tersembunyi */
+  transform: translateX(20px); /* Elemen dimulai dari luar layar */
+  transition: all 0.8s ease-out;
+}
+
+.slide-in-right.visible {
+  opacity: 1; /* Menampilkan elemen */
+  transform: translateX(0); /* Kembalikan elemen ke posisi normal */
+}
+
+/* Delay animasi */
+.slide-in-right.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.slide-in-right.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.slide-in-right.delay-3 {
+  animation-delay: 0.6s;
+}

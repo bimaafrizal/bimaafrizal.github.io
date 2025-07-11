@@ -12,6 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 const faders = document.querySelectorAll(".fade-in");
+const faders2 = document.querySelectorAll(".slide-in-right");
 
 const appearOptions = {
   threshold: 0.1,
@@ -27,6 +28,10 @@ const appearOnScroll = new IntersectionObserver(function (entries, observer) {
 }, appearOptions);
 
 faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+faders2.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
@@ -54,6 +59,8 @@ window.addEventListener("DOMContentLoaded", () => {
   
   if (typingElement) type(typingElement);
   if (typingElementMobile) type(typingElementMobile);
+
+  
 });
 
 const hamburger = document.querySelector('#hamburger-icon');
@@ -83,3 +90,5 @@ hamburger.addEventListener('click', () => {
     }, 300);
   }
 });
+
+
