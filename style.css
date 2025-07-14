@@ -143,3 +143,18 @@
       flex: 1;
       padding: 1rem;
     }
+
+     .card-container {
+            height: 400px; /* Tinggi tetap untuk semua cards */
+        }
+        
+        .card-image {
+            height: 200px; /* Tinggi gambar tetap */
+        }
+        
+        .card-content {
+            height: 200px; /* Tinggi konten tetap */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
